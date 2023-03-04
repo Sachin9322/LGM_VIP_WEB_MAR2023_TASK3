@@ -1,0 +1,226 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(223, 121, 175, 0.377);
+    font-size: 1.2rem;
+}
+
+h1 {
+    padding: 6px;
+    background-color:rgb(202, 233, 101) ;
+    color: rgb(17, 8, 16);
+    border-bottom: 1px solid rgb(221, 233, 62);
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    position: fixed;
+}
+
+
+#details {
+    position: fixed;
+    height: 550px;
+    width: 49%;
+    border-right: 3px solid rgb(162, 43, 226);
+    margin-top: 30px;
+    padding: 4%;
+    padding: 40px;
+    margin-left: 40px;
+    font-size: 1.3rem;
+}
+
+input {
+    border-radius: 15px;
+    padding: 10px;
+    height: 1.8rem;
+    margin-top: 11px;
+    height: fit-content;
+    margin-left: 30.5px;
+}
+
+input:focus {
+    outline-color: rgb(132, 21, 223);
+}
+
+input[type=file]::file-selector-button {
+    background-color:rgb(223, 207, 214);
+    color: rgb(89, 0, 255);
+    border-radius: 5.5px;
+    transition: 0.5s;
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: rgb(22, 236, 72);
+    color: #471eeb;
+    border: 3px solid #eb441e;
+}
+
+.width {
+    width: 75%;
+    padding-left: 5.5px;
+}
+
+label {
+    text-decoration: none;
+}
+
+.radios label {
+    text-decoration: none;
+}
+
+.boxes label {
+    text-decoration: none;
+}
+
+#clear {
+    float: right;
+    background-color: rgb(33, 205, 193);
+}
+
+.buttons {
+    padding-left: 21px;
+    padding-right: 22px;
+    margin-top: 31px;
+}
+
+button {
+    width: 41%;
+    border-radius: 7.5px;
+    background-color:rgb(33, 205, 193)  ;
+    color: rgb(3, 3, 2);
+    padding: 11px;
+    transition: 0.6s;
+    font-size: 600;
+}
+
+button:hover {
+    background-color: rgb(34, 102, 170);
+    color: rgb(173, 167, 193);
+    border: 2px solid rgb(20, 4, 4);
+}
+
+#inp_male {
+    accent-color: blue;
+}
+
+#inp_female {
+    accent-color: blue;
+}
+
+.checkbox {
+    accent-color: blue;
+}
+
+.head {
+    font-weight: 900;
+}
+
+.radios {
+    margin-left: 100px;
+}
+
+.boxes {
+    margin-left: 100px;
+}
+
+
+
+#output {
+    position: absolute;
+    width: 90%;
+    height: 450px;
+    padding: 30px;
+    border: radius 20px;
+    ;
+    border: 2px solid rgb(9, 21, 17);
+    float: right;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+#output::-webkit-scrollbar {
+    width: 16px;
+}
+
+#output::-webkit-scrollbar-thumb {
+    background-color: #2aa18c;
+    border-radius: 20px;
+    border: 2px solid rgb(185, 29, 29);
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin: 11px;
+    border-radius: 11px;
+}
+
+.info {
+    overflow-wrap: break-word;
+    border: 1.5px solid black;
+    width: 70%;
+    border-bottom-left-radius: 11px;
+    border-top-left-radius: 11px;
+    padding: 11px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.image {
+    border: 2px solid rgb(34, 16, 16);
+    width: 30%;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:915px){
+    img{
+        
+        width:100%;
+        height:100%;
+    }
+}
+@media(max-width:810px){
+    img{
+        
+        width:100%;
+        height:80%;
+        margin-top: 15px;
+    }
+}
+@media(max-width:660px){
+    img{
+        height:60%;
+        margin-top: 30px;
+    }
+}
